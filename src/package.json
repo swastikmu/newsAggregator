@@ -1,0 +1,26 @@
+{
+  "name": "newsaggregator",
+  "version": "1.0.0",
+  "description": "This is full stack news aggregator app using node.js , Javascript , html5 , css and online mongoDB",
+  "main": "aggregator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swastikmu/newsAggregator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/swastikmu/newsAggregator/issues"
+  },
+  "homepage": "https://github.com/swastikmu/newsAggregator#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express-session": "^1.17.0",
+    "fs": "0.0.1-security",
+    "joi": "^14.3.1",
+    "path": "^0.12.7"
+  }
+}

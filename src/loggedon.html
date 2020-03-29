@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.js"></script> 
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="login.js"></script>
+    <title>News Aggregator</title>
+    <link rel="icon" src="android-chrome-512x512.png">
+</head>
+<body>
+
+<header class='header'>
+
+    <div class="container">
+        <button class='btn btn-success button1'>News Home</button>
+        <button class='btn btn-success button2' data-toggle="modal"  data-target="#logoutModal" id="logout">LogOut</button>
+    </div>
+
+</header>     
+
+
+
+
+<nav>
+    <ul>
+    <li><button padding="10px" class='btn btn-primary myButton' id='general'>General</button></li>
+    <li><button padding="10px" class='btn btn-primary myButton' id='sport'>Sports</button></li>
+    <li><button padding="10px" class='btn btn-primary myButton' id='business'>Business</button></li>
+    <li><button padding="10px" class='btn btn-primary myButton' id='health'>Health</button></li>
+    <li><button padding="10px" class='btn btn-primary myButton' id='enter'>Entertainment</button></li>
+</ul>
+</nav>
+
+    <section>
+        <h3 class='newsScetion'>News Section</h3>
+
+        <div id='details'></div>
+
+</body>
+
+</html>
