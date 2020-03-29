@@ -64,6 +64,23 @@ res.redirect('/logged');
 
 );
 
+app.post('/auth', async (req, res) => {
+
+    let user = await User.findOne({userId : req.body.userId});
+    
+if(user != null){
+    if ((req.body.userId == user.userId) && (req.body.password == user.password)) {
+        res.redirect('/logged'); 
+    }
+    else{
+        res.send('Invalid user or password');
+    }
+    
+    }
+}
+    
+    );
+
 app.get('/logged' , function(req, res){
 
 

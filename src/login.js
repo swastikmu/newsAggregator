@@ -20,7 +20,44 @@ for (let index = 0; index < inputEnter.length; index++) {
 
 }
 
-$('form').on('submit', async function (e) {
+$('#loginForm').on('submit', async function (e) {
+
+    e.preventDefault();
+    var email = document.getElementById('email');
+    var password = document.getElementById('pwd');
+
+    
+    var response = await loginUser(email , password);
+
+    $('#signUpModal').modal('hide');
+    window.location.replace("http://localhost:3000/logged");
+    
+    return false;
+    
+    });
+    
+function loginUser(email , password) {
+   return fetch("http://localhost:3000/auth", 
+    { 
+      
+    // Adding method type
+
+    method: "POST", 
+      
+    // Adding body or contents to send 
+
+    headers :{
+        "content-type": "application/json"
+    },
+
+    body: JSON.stringify({
+        "userId" : email.value,
+        "password" : password.value
+    })
+}); 
+}
+
+$('#myform').on('submit', async function (e) {
 
 e.preventDefault();
 var email = document.getElementById('email1');

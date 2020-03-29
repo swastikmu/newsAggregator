@@ -35,7 +35,7 @@
 
             <!-- Modal body -->
             <div class="modal-body">
-            <form action="" method="post">
+            <form action="" method="post" id='loginForm'>
                 <div class="form-group">
                 <label for="email">Email address:</label>
                 <input type="email" class="form-control" placeholder="Enter email" id="email" required>
@@ -49,7 +49,7 @@
                     <input class="form-check-input" type="checkbox"> Remember me
                 </label>
                 </div>
-                <button type="submit" class="btn btn-primary" disabled id="save" onclick="callUser()">Submit</button>
+                <button type="submit" class="btn btn-primary" disabled id="save">Submit</button>
                 <div id='showErr'></div>
             </form>
             </div>
@@ -105,7 +105,7 @@
 </div>
 
 <!-- Modal -->
-<div id="myModal1" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<!-- <div id="myModal1" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
     <h3 id="myModalLabel">Modal header</h3>
@@ -117,29 +117,15 @@
     <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
     <button class="btn btn-primary">Save changes</button>
   </div>
-</div>
+</div> -->
 
 
 </header>
 
-
-
-
-         <!-- <nav>
-            <ul>
-            <li><button padding="10px" class='btn btn-primary myButton'>General</button></li>
-            <li><button padding="10px" class='btn btn-primary myButton'>Sports</button></li>
-            <li><button padding="10px" class='btn btn-primary myButton'>Business</button></li>
-            <li><button padding="10px" class='btn btn-primary myButton'>Health</button></li>
-            <li><button padding="10px" class='btn btn-primary myButton'>Entertainment</button></li>
-        </ul>
-        </nav> -->
-            <!-- <h3 class='newsScetion'>News Section</h3> -->
-
-            <div id='initial'>Welcome to authenticated News</div>
+            <div id='initial'>Welcome to Authenticated News</div>
 
             <div id='info'>
-                Here we provide you verified news. Our reporters checks the fact and then only we deliver the News. To get latest and authentic information from
+                Here we provide you verified news. Our reporters checks the fact and then only we deliver the News. To get latest and authentic information please
                     stay with us.
               
             </div>
